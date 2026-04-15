@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="google-site-verification" content="_xxF_bbBwf3e9Am4wek4B3-pGfs8_G9IdFhbX1u_Oik" />
+    <meta name="keywords" content="Website Rpl 1 , xrpl1, rpl1 hammer">
+    <link rel="icon" type="image/svg+xml" href="image/logo2.png" />
+    <title>X RPL1 HAMMER</title>
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="image/logo2.png">
+    <link rel="preload" as="image" href="image/bg.jpeg">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+    
+<body>
+
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="image/logo2.png" alt="Logo" onerror="this.style.display='none'">
+            </div>
+            <div class="loader-title">X RPL1 HAMMER</div>
+            <div class="loader-bar-wrapper">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            <div class="loader-percent" id="loaderPercent">0%</div>
+        </div>
+    </div>
+
+    <div class="atas">
+        <div class="isi">
+            <!-- NAVBAR -->
+            <nav>
+                <div class="logo" id="navLogo">
+                    <img src="image/logo2.png" alt="Logo" loading="lazy">
+                </div>
+
+                <!-- PILL NAVBAR (muncul saat logo diklik) -->
+                <div class="pill-nav" id="pillNav">
+                    <a href="#home" class="pill-nav-link">Home</a>
+                    <a href="#struktur" class="pill-nav-link">Information</a>
+                    <a href="#students" class="pill-nav-link">Members</a>
+                    <a href="#gallery" class="pill-nav-link">Gallery</a>
+                </div>
+            </nav>
+            <!-- Overlay untuk menutup pill nav -->
+            <div class="pill-nav-overlay" id="pillNavOverlay"></div>
+
+            <!-- HERO SECTION -->
+            <section class="hero" id="home">
+                <h1>WELCOME</h1>
+                <h3>TO X RPL1</h3>
+        </div>
+    </div>
+
+    <!-- STRUCTURE SECTION -->
+    <section class="structure-section" id="struktur">
+        <section class="org-section">
+
+            <!-- TAB SWITCHER -->
+            <div class="tab-switcher">
+                <button class="tab-switch-btn active" data-tab="structure">Structure</button>
+                <button class="tab-switch-btn" data-tab="piket">Jadwal & Piket</button>
+                <div class="tab-switch-indicator"></div>
+            </div>
+
+            <!-- TAB: STRUCTURE CLASS -->
+            <div class="tab-panel active" id="tab-structure">
+                <div class="org-tree">
+
+                    <!-- Row 1: Wali Kelas -->
+                    <div class="ot-row">
+                        <div class="ot-node">
+                            <div class="ot-label">Wali Kelas</div>
+                            <div class="card" data-img="image/ketuaguild.webp" data-role="Wali Kelas">
+                                <div class="name">NURUL FITRAH RAHMADANI, S.Kom</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Garis: Wali → T-junction -->
+                    <div class="ot-line-v"></div>
+
+                    <!-- T-junction horizontal -->
+                    <div class="ot-t-row">
+                        <div class="ot-t-left"></div>
+                        <div class="ot-t-right"></div>
+                    </div>
+
+                    <!-- Row 2: Ketua & Wakil -->
+                    <div class="ot-row ot-double">
+                        <div class="ot-col">
+                            <div class="ot-line-v"></div>
+                            <div class="ot-node">
+                                <div class="ot-label">Ketua Kelas</div>
+                                <div class="card" data-img="image/paket.jpeg" data-role="Ketua Kelas">
+                                    <div class="name">Alatha Barnet</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ot-col">
+                            <div class="ot-line-v"></div>
+                            <div class="ot-node">
+                                <div class="ot-label">Wakil Ketua</div>
+                                <div class="card" data-img="image/kewek.jpeg" data-role="Wakil Ketua">
+                                    <div class="name">Ardan Elistyan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Garis turun dari Ketua & Wakil -->
+                    <div class="ot-row ot-double">
+                        <div class="ot-col"><div class="ot-line-v"></div></div>
+                        <div class="ot-col"><div class="ot-line-v"></div></div>
+                    </div>
+
+                    <!-- Row 3: Sekretaris & Bendahara (card vertikal) -->
+                    <div class="ot-row ot-double">
+
+                        <!-- Sekretaris -->
+                        <div class="ot-col ot-stack">
+                            <div class="ot-node">
+                                <div class="ot-label">Sekretaris</div>
+                                <div class="card" data-img="image/lena.webp" data-role="Sekretaris 1">
+                                    <div class="name">Alena Fressilia</div>
+                                </div>
+                            </div>
+                            <div class="ot-line-v short"></div>
+                            <div class="ot-node">
+                                <div class="card" data-img="image/sipa.webp" data-role="Sekretaris 2">
+                                    <div class="name">Choiruliza Firdausyfa</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bendahara -->
+                        <div class="ot-col ot-stack">
+                            <div class="ot-node">
+                                <div class="ot-label">Bendahara</div>
+                                <div class="card" data-img="image/clara.webp" data-role="Bendahara 1">
+                                    <div class="name">Clara Meyvita</div>
+                                </div>
+                            </div>
+                            <div class="ot-line-v short"></div>
+                            <div class="ot-node">
+                                <div class="card" data-img="image/helsa.webp" data-role="Bendahara 2">
+                                    <div class="name">Helsa Tanaya</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TAB: PIKET -->
+            <div class="tab-panel" id="tab-piket">
+                <div class="schedule-piket-wrapper">
+
+                    <!-- Day Title -->
+                    <h2 class="schedule-day-title" id="scheduleDayTitle"></h2>
+
+                    <!-- Schedule Table -->
+                    <div class="schedule-block">
+                        <table class="schedule-table" id="scheduleTable">
+                            <tbody id="scheduleBody"></tbody>
+                        </table>
+                    </div>
+
+                    <!-- Piket Block -->
+                    <div class="piket-block">
+                        <h3 class="piket-day-title">Piket</h3>
+                        <table class="schedule-table">
+                            <tbody id="piketBody"></tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+                <!-- Modal - Lightbox Style -->
+            <div class="modal">
+                <span class="close">&times;</span>
+                <div class="modal-box">
+                    <img src="" alt="Structure Member" loading="lazy">
+                    <div class="modal-info">
+                        <div class="modal-role"></div>
+                        <h3 class="modal-name"></h3>
+                    </div>
+                </div>
+            </div>
+
+<section id="students">
+    <h2 class="students-title">Members</h2>
+    <div class="students-container">
+        <div class="students-wrapper">
+            <div class="student-card" data-student="1">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-AGUSTINA PRATIWI.webp" alt="Agustina Pratiwi" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Agustina Pratiwi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="2">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-AHMAD NOUVAL ALVINO.webp" alt="Ahmad Nouval Alvino" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Ahmad Nouval Alvino</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="3">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-ALATHA BARNET YUSAD PERMANA.webp" alt="Alatha Barnet Yusad Permana" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Alatha Barnet Yusad Permana</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="4">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-ALENA FRESSILIA.webp" alt="Alena Fressilia" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Alena Fressilia</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="5">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-ALICEA SYAMSA ATTA BELLATRIX.webp" alt="Alicea Syamsa Atta Bellatrix" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Alicea Syamsa Atta Bellatrix</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="6">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-ANDIKA FEBRIANTO.webp" alt="Andika Febrianto" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Andika Febrianto</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="7">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-ANEVALI REDYA VIOLA.webp" alt="Anevali Redya Viola" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Anevali Redya Viola</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="8">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-ANIF FAKTURESA RAVAEL.webp" alt="Anif Fakturesa Ravael" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Anif Fakturesa Ravael</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="9">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-ANINDITA NAFISAH FARRAS PUTRI.webp" alt="Anindita Nafisah Farras Putri" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Anindita Nafisah Farras Putri</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="10">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-ARDAN ELISTYAN.webp" alt="Ardan Elistyan" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Ardan Elistyan</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="11">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-ATTA ALFARIZI.webp" alt="Atta Alfarizi" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Atta Alfarizi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="12">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-AURA CAHAYA FERNANDA.webp" alt="Aura Cahaya Fernanda" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Aura Cahaya Fernanda</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="13">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-AVELYA MAULIDIA ZAHRA.webp" alt="Avelya Maulidia Zahra" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Avelya Maulidia Zahra</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="14">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-BUNGA CINTA AWALIDA.webp" alt="Bunga Cinta Awalida" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Bunga Cinta Awalida</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="15">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-CHERYL LISTA FEBY ERVIANA.webp" alt="Cheryl Lista Feby Erviana" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Cheryl Lista Feby Erviana</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="16">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-CHOIRULIZA FIRDAUSYFA.webp" alt="Choiruliza Firdausyfa" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Choiruliza Firdausyfa</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="17">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-CHRISTIAN MAULANA AL HAQIQI.webp" alt="Christian Maulana Al Haqiqi" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Christian Maulana Al Haqiqi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="18">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-CHRISTIAN PRAMUDYO ADI PRABOWO.webp" alt="Christian Pramudyo Adi Prabowo" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Christian Pramudyo Adi Prabowo</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="19">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-CLARA MEYVITA SYAHRANI.webp" alt="Clara Meyvita Syahrani" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Clara Meyvita Syahrani</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="20">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-DHINI MAREYTHA AMIRE.webp" alt="Dhini Mareytha Amire" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Dhini Mareytha Amire</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="21">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-DINDA INTAN ALFAIZ.webp" alt="Dinda Intan Alfaiz" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Dinda Intan Alfaiz</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="22">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-DONY DWI RISTANTO.webp" alt="Dony Dwi Ristanto" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Dony Dwi Ristanto</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="23">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-ELIZA AYU ALFABETH.webp" alt="Eliza Ayu Alfabeth" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Eliza Ayu Alfabeth</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="24">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-FADANI TRISNA DIABY.webp" alt="Fadani Trisna Diaby" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Fadani Trisna Diaby</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="25">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-FIKRI EKA WIDYADHANA.webp" alt="Fikri Eka Widyadhana" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Fikri Eka Widyadhana</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="26">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-FIRIYAL ANGGARAPUTRA.webp" alt="Firiyal Anggaraputra" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Firiyal Anggaraputra</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="27">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-HALIMATUS SA'ADAH.webp" alt="Halimatus Sa'adah" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Halimatus Sa'adah</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="28">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-HANIF AKBAR KUSUMANDYOKO.webp" alt="Hanif Akbar Kusumandyoko" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Hanif Akbar Kusumandyoko</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="29">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-HAVANA EGA RIANTO.webp" alt="Havana Ega Rianto" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Havana Ega Rianto</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="30">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-HELSA TANAYA.webp" alt="Helsa Tanaya" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Helsa Tanaya</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="31">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-HILDA TRI ANANTA.webp" alt="Hilda Tri Ananta" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Hilda Tri Ananta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="32">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-IBNU ABI ZAKARIA.webp" alt="Ibnu Abi Zakaria" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Ibnu Abi Zakaria</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="33">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-JASMINE ASSEL ARDITANIA.webp" alt="Jasmine Assel Arditania" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Jasmine Assel Arditania</div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-card" data-student="34">
+                <div class="student-card-image-wrapper">
+                    <img src="image/RPL 1_3X4/RPL 1-NEFI AEKA MAHARANI.webp" alt="Nefi Aeka Maharani" class="student-card-image" loading="lazy">
+                    <div class="student-card-name-wrapper">
+                        <div class="student-name">Nefi Aeka Maharani</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="students-dots" id="studentsDots"></div>
+</section>
+
+    <!-- STUDENT MODAL -->
+    <div class="student-modal">
+        <span class="student-close">&times;</span>
+        <div class="student-modal-box">
+            <img src="" alt="Student Photo" loading="lazy">
+            <div class="student-modal-info">
+                <h3 class="student-modal-name"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery">
+        <h2 class="glh2">Gallery</h2>
+        <div class="slider">
+            <div class="slides" id="slides">
+                <div class="slide"><img src="image/1.jpeg" alt="Gallery 1" loading="lazy" /></div>
+                <div class="slide"><img src="image/2.jpeg" alt="Gallery 2" loading="lazy" /></div>
+                <div class="slide"><img src="image/3.jpeg" alt="Gallery 3" loading="lazy" /></div>
+                <div class="slide"><img src="image/4.jpeg" alt="Gallery 4" loading="lazy" /></div>
+                <div class="slide"><img src="image/5.jpeg" alt="Gallery 5" loading="lazy" /></div>
+                <div class="slide"><img src="image/6.jpeg" alt="Gallery 6" loading="lazy" /></div>
+            </div>
+        </div>
+
+        <div class="dots" id="dots"></div>
+    </section>
+
+    <!-- LIGHTBOX (Outside gallery section for proper centering) -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImg" alt="Lightbox" loading="lazy">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-col">
+                <img src="image/hammer.webp" alt="Logo" class="footer-logo" loading="lazy">
+            </div>
+
+            <!-- Created By -->
+            <div class="footer-col">
+                <h5>CREATED BY</h5>
+                <p><a href="https://www.instagram.com/fr_yalll/" target="_blank">RIYOL</a></p>
+                <p><a href="https://www.instagram.com/fakuresaa" target="_blank">FAKTURESA</a></p>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="footer-col">
+                <h5>FOLLOW US</h5>
+                <p><a href="https://www.instagram.com/rplxone_/" target="_blank">Instagram</a></p>
+                <p><a href="https://www.tiktok.com/@exerpeelone2" target="_blank">Tiktok</a></p>
+            </div>
+
+            <div class="footer-col center-text">
+                <h2>XRPL1HAMMER</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Kelas X RPL 1 | Di Kelola Oleh Siswa XRPL1
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
